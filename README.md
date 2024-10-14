@@ -29,4 +29,5 @@
   - Accede a un panel para ver tus datos y gestionar tus entradas.
   - Cambia la apariencia del periódico mágico y siéntete como un verdadero estudiante de Hogwarts.
 
+![image](https://github.com/user-attachments/assets/f5f2bd22-0f94-4ebb-9a78-2a96e38a9d2b)
 
