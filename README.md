@@ -30,4 +30,6 @@
   - Cambia la apariencia del periódico mágico y siéntete como un verdadero estudiante de Hogwarts.
 
 ![image](https://github.com/user-attachments/assets/f5f2bd22-0f94-4ebb-9a78-2a96e38a9d2b)
+![image](https://github.com/user-attachments/assets/21704a1e-335c-49a0-8e11-e64a47f5f423)
+
 
