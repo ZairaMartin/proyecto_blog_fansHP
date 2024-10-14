@@ -1,0 +1,3 @@
+RewriteEngine On
+RewriteBase /blogHarryPotterlandia/
+RewriteRule ^categoria/([0-9]+)$ categoria.php?id_categoria=$1 [L]

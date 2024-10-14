@@ -1,0 +1,679 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+@font-face {
+    font-family: 'ParryPotter';
+    src: url("/blogHarryPotterlandia/fonts/ParryHotter.ttf") format('truetype');
+}
+@font-face {
+    font-family: 'MagicSchool';
+    src: url("/blogHarryPotterlandia/fonts/MagicSchoolOne.ttf") format('truetype');
+}
+@font-face {
+    font-family: 'MagicSchool2';
+    src: url("/blogHarryPotterlandia/fonts/MagicSchoolTwo.ttf") format('truetype');
+}
+
+body {
+    width: 100%;
+    background-image: url("/blogHarryPotterlandia/img/fondo.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+
+}
+
+.letra{
+    font-family: 'ParryPotter';
+    /* font-size: 23px; */
+}
+.magic{
+    font-family: 'MagicSchool';
+    letter-spacing: 1px;
+}
+
+.alerta{
+    padding: 10px;
+    font-size: 18px;
+    background-color: rgba(155, 69, 7, 0.629) !important;
+    color: white;
+    margin: 10px;
+    
+}
+
+.alerta__errores{
+    background-color: rgba(155, 54, 7, 0.629) !important;
+}
+
+.alerta__exito{
+    background-color: rgba(30, 110, 19, 0.629) !important;
+}
+
+
+
+.container {
+    width: 90%;
+    min-width: 300px;
+    margin: 0 auto;
+    margin-top: 7px;
+    background-color: #f5e6ce;
+    border: 1px solid rgb(131, 116, 87);
+    border-radius: 3px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.988), 0 0 7px rgb(131, 116, 87) inset;
+
+    display: grid;
+    grid-template-rows: auto auto 80px;
+    grid-template-columns: 20% auto;
+    grid-template-areas:
+        "header header"
+        "aside main"
+        "footer footer";
+
+    min-height: 100vh;
+}
+
+#header {
+    grid-area: header;
+    width: 100%;
+}
+
+#header #title {
+    height: 100px;
+    color: black;
+    width: 100%;
+    line-height: 70px;
+    border-bottom: 3px solid black;
+    font-size: 60px;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    /* font-family: 'ParryPotter'; */
+}
+
+
+#header nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    line-height: 50px;
+    justify-content: center;
+    .nav__item {
+        padding: 3px;
+        padding-top: 10px;
+        margin: 0 15px;
+        font-size: 25px;
+        font-weight: 600;
+        a{
+            color: black;
+        }
+        
+    }
+}
+.pri_letra::first-letter{
+    font-family: 'MagicSchool';
+}
+
+#nav {
+    width: 100%;
+    text-align: center;
+    margin: 0px auto;
+    border-bottom: 3px solid black;
+}
+
+/* & ASIDE */
+#aside{
+    grid-area: aside;
+    border-right: 3px solid black;
+}
+
+
+
+
+/* & inicio */
+#main{
+    width: 90% !important;
+    margin: 0px auto;
+    .intro{
+        padding: 10px;
+        margin: 15px auto;
+        
+        h1{
+            font-size: 45px;
+            margin: 20px auto;
+        }
+
+        img{
+            max-width: 700px;
+            min-width: 200px;
+            margin: 0px auto;
+            filter: grayscale(0.8);
+            box-shadow: 0px 0px 15px rgba(37, 21, 10, 0.905);
+            transition: box-shadow 0.3s, filter 0.3s;
+        }
+        img:hover{
+            filter: grayscale(0);
+            box-shadow: 4px 4px 15px rgba(37, 21, 10, 0.905);
+        }
+        .carta{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+
+        }
+
+        .conve{
+            font-size: 24px;
+            margin: 10px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+    }
+
+
+
+
+    .conversacion{
+        margin: auto;
+        display: block;
+        padding: 5px;
+        text-align: start;
+        font-size: 45px !important;
+        
+    }
+
+    .conv{
+        margin: 10px auto;
+        padding: 10px;
+        p{
+            display: block;
+            margin: 10px;
+            text-align: start;
+            /* padding-left: 10px; */
+            font-size: 23px;
+        }
+    }
+
+}
+hr{
+    border: none;
+    height: 2px;
+    background-color: #1c1c1c;
+    margin: 40px 0;
+}
+
+.espacio{
+    margin-top:90px;
+}
+
+.articulo_ind{
+    .titulo,
+    .subtitulo,
+    .contenido{
+        text-align: left;
+        margin-top: 30px;
+    }
+    text-align: left;
+    .titulo{
+        font-size: 32px;
+        font-weight: bold;
+    }
+    .subtitulo{
+        font-size: 28px;
+        font-weight: bold;
+    }
+    .contenido{
+        font-size: 23px;
+        margin-bottom: 30px;
+    }
+}
+
+.copas{
+    font-size: 35px;
+    margin: 40px;
+}
+
+#competicion{
+    border: 3px solid black;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:space-around;
+    background-color: #f5e6ce;
+
+
+    .compet{
+        padding: 30px;
+        
+        h3{
+            font-family: 'MagicSchool';
+            font-size: 50px;
+        }
+        .puntos{
+            font-size: 35px;
+            font-weight: 400;
+            text-shadow: 0px 0px 5px rgba(50, 44, 44, 0.542);
+        }
+
+    }
+    /* Gryffindor */
+    .G:hover{
+        h3,
+        .puntos{
+            color: #7F0909;
+            text-shadow: 0px 0px 10px #D3A625;
+        }
+    }
+    /* Slytherin */
+    .S:hover{
+        h3,
+        .puntos{
+            color: #1A472A;
+            text-shadow: 0px 0px 10px #AAAAAA;
+        }
+    }
+    /* Hufflepuff */
+    .H:hover{
+        h3,
+        .puntos{
+            color: #FFD700;
+            text-shadow: 0px 0px 10px #000000;
+        }
+    }
+    /* Ravenclaw */
+    .R:hover{
+        h3,
+        .puntos{
+            color: #222F5B;
+            text-shadow: 0px 0px 10px #6E3B19;
+        }
+    }
+    
+
+}
+
+
+
+
+/* &        -------------------  Formularios  ---------------- */
+fieldset,
+.login {
+    border: 2px solid #000;
+    border-radius: 3px;
+    margin: 0px auto;
+    box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.3); 
+}
+
+legend{
+    font-size: 30px;
+    text-shadow: 0px 0px 3px rgba(0, 0, 0, 0.431);
+}
+.formulario:hover .form {
+    label,
+    input,
+    #casa {
+        color: rgba(0, 0, 0, 0.811);
+        transition: color 0.3s ease-in-out;
+    }
+}
+
+.login{
+    max-width: 280px;
+    /* min-width: 250px; */
+    padding: 20px;
+    /* margin: 0px auto; */
+    margin: 20px;
+    margin-top: 30px !important;
+
+    h3{
+        font-size: 28px;
+        font-weight: 500;
+        padding: 20px 0px;
+        margin-bottom: 15px;
+    }
+}
+
+
+#login{
+    grid-area: login;
+}
+#registro{
+    grid-area: registro;
+}
+
+.formulario {
+    width: 90%;
+    /* min-width:250px; */
+    padding: 25px;
+    align-content: center;
+    margin: 0px auto;
+
+
+    label,
+    input,
+    #casa {
+        padding: 10px;
+        width: 80%;
+        margin: 0px auto;
+        color: rgba(0, 0, 0, 0.049);
+        background-color: transparent;
+        font-size: 18px;
+    }
+
+
+    
+    .form:hover label,
+    .form:hover input,
+    .form:hover #casa {
+        color: black;
+        border-color: black;
+        border-width: 2px;
+        transition: color 3s ease-in-out;
+    }
+
+    .form:hover ::placeholder{
+        color: rgba(0, 0, 0, 0.434);
+    }
+    input:focus::placeholder {
+        color: transparent; 
+    }
+    input:focus{
+        color: #000;
+    }
+    .form:hover input{
+        box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.186);
+    }
+
+    input,
+    #casa {
+        border: 1px solid rgba(0, 0, 0, 0.049);
+        border-radius: 15px 3px 15px 3px;
+        outline: none;
+    }
+
+    #casa {
+        margin-bottom: 30px;
+    }
+
+    input:not(:placeholder-shown) {
+        color: black;
+    }
+}
+
+
+form{
+    margin-top: 30px;
+}
+
+
+.form {
+    display: flex;
+    flex-direction: column;
+
+    ::placeholder{
+        color: rgba(0, 0, 0, 0.049);
+        font-size: 18px;
+    }
+
+}
+
+::placeholder:hover,
+input:hover,
+label:hover,
+#casa:hover{
+    color: rgba(0, 0, 0, 0.843);
+}
+
+.form__item {
+    text-align: center;
+    font-size: 18px;
+    color: rgba(0, 0, 0, 0.092);
+}
+
+.margen__botton {
+    margin-bottom: 30px;
+}
+
+#main {
+    grid-area: main;
+    
+}
+.ultimas_entradas>.title_ultimas{
+    font-size: 30px;
+}
+
+.entrada{
+    text-align: start;
+    margin-bottom: 25px;
+    
+
+    /* .title__post::first-letter{
+        font-family: 'MagicSchool';
+        font-size: 24px;
+    } */
+    .title__post{
+        font-size: 20px;
+    }
+
+    .descripcion{
+        font-size: 18px;
+    }
+
+    .title__post,
+    .descripcion{
+        margin: 5px;
+        text-align: start;
+    }
+
+    .fecha_post{
+        color: #00000088;
+        font-size: 15px;
+    }
+}
+
+.entrada>a{
+    color: black;
+}
+
+
+/* *   FORMULARIO ENTRADA */
+
+
+.post{
+    h1{
+        font-size: 40px;
+    }
+    /* h1::first-letter{
+        font-family: 'MagicSchool';
+        font-size: 55px;
+    } */
+    p{
+        font-size: 26px;
+    }
+
+    align-items: center;
+    .form_post{
+        font-size: 35px;
+        font-family: 'MagicSchool';
+        padding: 20px;
+    }
+
+    input{
+        margin-bottom: 20px;
+    }
+
+    .input_post{
+        width: 600px;
+        min-width: 200px;
+        padding: 15px;
+        border-radius: 15px 3px 15px 3px;
+        outline: none;
+        border: 1px solid rgba(0, 0, 0, 0.765);
+        color: rgba(0, 0, 0, 0.721);
+        background-color: transparent;
+        font-size: 18px;
+    }
+
+    button{
+        margin-top: 20px;
+        background-color: transparent;
+    }
+
+}
+
+
+/* mis datos */
+.mis_datos{
+    h1{
+        font-size: 40px;
+    }
+    p{
+        font-size: 27px;
+        margin: 7px;
+    }
+
+}
+
+.entradas{
+    margin:0px 30px;
+    h1{
+        font-size: 37px;
+        
+    }
+    .tit{
+        margin-top: 30px;
+        padding: 10px 15px;
+        border: 2px solid black;
+    }
+    /* h1::first-letter{
+        font-family: 'MagicSchool';
+    } */
+    h2{
+        font-size: 26px;
+        color: #2a2626ba;
+    }
+    h4{
+        font-size: 19px;
+        font-weight: 500;
+        color:#202721b5;
+    }
+    p{
+        text-align: left;
+        margin-top: 15px;
+        font-size: 18px;
+        letter-spacing: 1px;
+        word-spacing: 3px;
+    }
+}
+
+
+.entrada{
+
+    margin: 30px;
+    .title__post{
+        font-size: 30px;
+        color: #1c1a1ad6;
+    }
+    
+    .fecha_post{
+        font-size: 19px;
+        font-weight: 500;
+        color:#202721b5;
+    }
+    .descripcion{
+        text-align: left;
+        margin-top: 15px;
+        font-size: 18px;
+        letter-spacing: 1px;
+        word-spacing: 3px;
+    }
+
+}
+
+
+#footer {
+    grid-area: footer;
+    text-align: center;
+    margin-top: 30px;
+}
+
+#bttn_registro,
+#bttn_login{
+    padding: 10px 20px;
+    margin: 20px;
+    background-color: transparent;
+    font-size: 20px;
+    /* border-radius: 15px 3px 15px 3px; */
+    border: 2px solid black;
+    box-shadow: 2px 2px 7px #363636c2;
+    
+}
+
+.bttn{
+    display: block;
+    font-size: 16px;
+    color: black;
+    width: 150px;
+    padding: 10px;
+    margin: 10px auto;
+    border: 2px solid black;
+    box-shadow: 2px 2px 7px #363636c2;
+}
+
+
+#bttn_registro:active,
+#bttn_login:active,
+.bttn:active{
+    
+    transform: scale(0.95);
+}
+
+/* @media (max-width: 1620px){
+    .container {
+        grid-template-rows: auto auto 50px;
+        grid-template-columns: 25% auto;
+        grid-template-areas:
+            "header"
+            "aside main"
+            "footer";
+
+        #aside{
+            width: 80%;
+            
+        }
+    
+    }
+}
+
+@media (max-width: 1550px){
+    .container {
+        grid-template-rows: auto auto 50px;
+        grid-template-columns: 100%;
+        grid-template-areas:
+            "header"
+            "aside" 
+            "main"
+            "footer";
+
+        #aside{
+            width: 80%;
+            display: grid;
+            margin: 0px auto;
+            border: none;
+            grid-template-columns: 50% 50%;
+            grid-template-rows: auto;
+            grid-template-areas: 
+            "login registro";
+            
+
+
+
+        }
+    
+    }
+} */
